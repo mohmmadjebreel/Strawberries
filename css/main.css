@@ -21,12 +21,15 @@
   a:active{
       color: var(--mainColor);
   }
+  a:hover{color: var(--mainColor);}
   /* my framework */
   .width-50{width: 50%;}
   .width-25{width: 25%;}
   .container{width: 90%; margin: auto;}
   .display-flex{display: flex;}
   .space-between-flex{justify-content: space-between;}
+  .position-relative{position: relative;}
+  /* end my framwork */
   
   /* start header */
   header.header {
@@ -74,4 +77,30 @@ h3{
     border-radius: 50px;
     color: #0c0c0c;
     margin-left: 100px;
+}
+.intro .container .contant-intro .icon-media {
+    margin-top: 70px;
+    width: 50%;
+    font-size: 37px;
+}
+i.fab.fa-facebook-f:hover {
+    color: royalblue;
+}
+i.fab.fa-instagram:hover {
+    color: var(--mainColor);
+}
+i.fab.fa-twitter:hover {
+    color: cornflowerblue;
+}
+i.fab.fa-pinterest-p:hover{
+    color: red;
+}
+.icon-left:after {
+    content: "";
+    background-color: var(--mainColor);
+    width: 256px;
+    height: 5px;
+    position: absolute;
+    left: 79px;
+    top: 13px;
 }
