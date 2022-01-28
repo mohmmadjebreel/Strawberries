@@ -1,0 +1,77 @@
+@font-face {
+    font-family: JosefinSans;
+    src: url(../fonts/JosefinSans-Regular.ttf);
+  }
+  :root{
+    --mainColor:#F81452;
+
+  }
+  body{ font-family: JosefinSans;}
+  ul{
+      margin: unset;
+      padding: unset;
+    list-style: none;
+  }
+  a{
+      color: initial;
+      text-decoration: none;
+      font-weight: bold;
+      
+  }
+  a:active{
+      color: var(--mainColor);
+  }
+  /* my framework */
+  .width-50{width: 50%;}
+  .width-25{width: 25%;}
+  .container{width: 90%; margin: auto;}
+  .display-flex{display: flex;}
+  .space-between-flex{justify-content: space-between;}
+  
+  /* start header */
+  header.header {
+    display: flex;
+}
+.menu ul li {
+    padding-top: 50px;
+}
+.icon-menu img {
+    padding-right: 29px;
+    padding-top: 20px;
+}
+/* end header */
+.container{position: relative;}
+h1 {
+    text-align: center;
+    font-size: 80px;
+    padding-right: 25%;
+}
+
+.contant-intro h1::after {
+    content: "berries";
+    position: absolute;
+    color:var(--mainColor);
+}
+span{color: var(--mainColor);}
+h3{
+    text-align: justify;
+    padding-right: 36px;
+}
+.btn button:first-child {
+    background: linear-gradient(
+        181deg
+        , var(--mainColor), #ff7188);
+    
+    border: 1px solid var(--mainColor);
+    padding: 20px 50px;
+    border-radius: 50px;
+    color: #fff;
+}
+.btn button:last-child {
+    background: #fff;
+    border: 4px solid var(--mainColor);
+    padding: 20px 50px;
+    border-radius: 50px;
+    color: #0c0c0c;
+    margin-left: 100px;
+}
